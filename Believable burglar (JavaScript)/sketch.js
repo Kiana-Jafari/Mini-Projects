@@ -114,21 +114,6 @@ const suspectList = [
 	}
 ];
 
-let myFont;
-let backgroundImg;
-
-function preload() 
-{
-	myFont = loadFont('SpecialElite.ttf');
-	backgroundImg = loadImage("Background.png");
-}
-
-function setup()
-{
-	createCanvas(640,480);
-	textFont(myFont);
-}
-
 // Declare both your functions here
 function matchProperties(suspectObj)
 {
@@ -171,12 +156,4 @@ function locateGuilty()
 			}
 	}
 	return guiltySuspect;
-}
-
-function draw()
-{
-	image(backgroundImg, 0, 0);
-	
-	fill(255,0,0);
-	text(locateGuilty().name + " is guilty!", 60, 80);
 }
