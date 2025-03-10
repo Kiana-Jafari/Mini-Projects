@@ -157,3 +157,5 @@ function locateGuilty()
 	}
 	return guiltySuspect;
 }
+
+console.log('The guilty suspect is ' + locateGuilty().name);
