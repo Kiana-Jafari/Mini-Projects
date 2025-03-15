@@ -178,7 +178,7 @@ function draw()
 			{
 				patrons[i][j].found = true;
 			}
-			index += 1;
+			index ++;
 		}
 	}
 
