@@ -120,7 +120,7 @@ function matchProperties(suspectObj)
   let count = 0;
 
 	const conditions = [
-    () => suspectObj.expression === 'nerveous',
+		() => suspectObj.expression === 'nerveous',
 		() => (suspectObj.weight > 64 && suspectObj.weight < 95),
 		() => (suspectObj.age > 18 && suspectObj.age < 65),
 		() => suspectObj.coat === 'green jacket',
